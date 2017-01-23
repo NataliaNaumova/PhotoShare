@@ -1,0 +1,19 @@
+﻿@using MvcPL.Models.Helpers
+@using MvcPL.Models
+@model PagedList<PhotoModel>
+
+@{
+    ViewBag.Title = "Latest photos";
+}
+
+<div class="container">
+    <p>Latest photos</p>
+    <hr />
+    <div id="photos">
+        @{ Html.RenderPartial("_Gallery", Model); }
+    </div>
+</div>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/script")
+}

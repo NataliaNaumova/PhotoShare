@@ -1,0 +1,10 @@
+C:\Users\Natalia\Desktop\PhotoShare\DAL.Interface\bin\Debug\DAL.Interface.dll
+C:\Users\Natalia\Desktop\PhotoShare\DAL.Interface\bin\Debug\DAL.Interface.pdb
+C:\Users\Natalia\Desktop\PhotoShare\DAL.Interface\obj\Debug\DAL.Interface.dll
+C:\Users\Natalia\Desktop\PhotoShare\DAL.Interface\obj\Debug\DAL.Interface.pdb
+C:\Users\ASUS\Desktop\PhotoShare\DAL.Interface\bin\Debug\DAL.Interface.dll
+C:\Users\ASUS\Desktop\PhotoShare\DAL.Interface\bin\Debug\DAL.Interface.pdb
+C:\Users\ASUS\Desktop\PhotoShare\DAL.Interface\obj\Debug\DAL.Interface.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\PhotoShare\DAL.Interface\obj\Debug\DAL.Interface.dll
+C:\Users\ASUS\Desktop\PhotoShare\DAL.Interface\obj\Debug\DAL.Interface.pdb
+C:\Users\Natalia\Desktop\PhotoShare\DAL.Interface\obj\Debug\DAL.Interface.csprojResolveAssemblyReference.cache

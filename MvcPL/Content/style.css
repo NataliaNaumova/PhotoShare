@@ -1,0 +1,126 @@
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;} 
+}
+
+.navbar-nav > li > form {
+    padding: 10px 15px;
+}
+
+@media (min-width: 768px){
+  .navbar-nav > li > form{
+      padding-top: 8px;
+      padding-bottom: 8px;
+  }
+}
+
+.logo-responsive {
+    height: 48px;
+    width: auto;
+}
+
+.navbar-brand {
+    padding-top: 1px;
+}
+
+.user-page-info-block {
+    margin-top: 25px;
+}
+
+.user-page-info-block img {
+    margin: 0 auto; 
+}
+
+.main-background {
+    width: 100%; height: auto;
+}
+
+.main-page-info-block {
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+.main-page-text-block {
+    margin-top: 15px;
+}
+
+.main-page-info-block-cameraimg {
+    margin: 0 auto; 
+}
+
+.main-page-info-block-vignetteimg {
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.photo-panel {
+    background-color: white;
+}
+
+
+.error-image {
+    margin: 0 auto;
+}
+
+.error-container {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+#navbar .add-photo-button {
+    margin-top: 8px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white; 
+}
+
+#navbar .add-photo-button:hover,
+#navbar .add-photo-button:active,
+#navbar .add-photo-button:focus {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+
+.deleted-photo {
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.btn-group .btn,
+.btn-group form {
+  position: relative;
+  float: left;
+}
+.btn-group .btn:hover,
+.btn-group .btn:focus,
+.btn-group .btn:active,
+.btn-group .btn.active {
+  z-index: 2;
+}

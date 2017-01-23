@@ -1,0 +1,10 @@
+C:\Users\Natalia\Desktop\PhotoShare\BLL.Interface\bin\Debug\BLL.Interface.dll
+C:\Users\Natalia\Desktop\PhotoShare\BLL.Interface\bin\Debug\BLL.Interface.pdb
+C:\Users\Natalia\Desktop\PhotoShare\BLL.Interface\obj\Debug\BLL.Interface.dll
+C:\Users\Natalia\Desktop\PhotoShare\BLL.Interface\obj\Debug\BLL.Interface.pdb
+C:\Users\ASUS\Desktop\PhotoShare\BLL.Interface\bin\Debug\BLL.Interface.dll
+C:\Users\ASUS\Desktop\PhotoShare\BLL.Interface\bin\Debug\BLL.Interface.pdb
+C:\Users\ASUS\Desktop\PhotoShare\BLL.Interface\obj\Debug\BLL.Interface.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\PhotoShare\BLL.Interface\obj\Debug\BLL.Interface.dll
+C:\Users\ASUS\Desktop\PhotoShare\BLL.Interface\obj\Debug\BLL.Interface.pdb
+C:\Users\Natalia\Desktop\PhotoShare\BLL.Interface\obj\Debug\BLL.Interface.csprojResolveAssemblyReference.cache

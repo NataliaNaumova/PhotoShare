@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Main Page";
+}
+
+<img class="main-background" src=@Url.Content("~/Content/images/main-background.jpg") />
+
+<div class="container">
+    <div class="row main-page-info-block">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="col-md-4">
+                <img alt="Photocamera" class="main-page-info-block-cameraimg img-responsive" src=@Url.Content("~/Content/images/main-page-camera.png") height="150" />
+                <div class="main-page-text-block">
+                    <p class="text-center">
+                        <strong>
+                            Share your inspiration! <br />
+                            Share your photos!<br />
+                        </strong>
+                    </p>
+                    <p class="text-justify">
+                        PhotoShare is a wonderful place for sharing your photography expirience. Get exposure.
+                        Connect with other enthusiasts and learn more about the craft.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <p class="text-justify">
+                    “You don't make a photograph just with a camera.
+                    You bring to the act of photography all the pictures you have seen, the books you have read,
+                    the music you have heard, the people you have loved.”
+                </p>
+                <p class="text-left">
+                    <strong>― Ansel Adams</strong>
+                </p>
+                <img alt="Vignette" class="main-page-info-block-vignetteimg img-responsive" src=@Url.Content("~/Content/images/vignette.png") height="130" />
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <hr />
+    <h3 class="text-center well">Recent photos</h3>
+    <div id="photos">
+        @{ Html.RenderAction("PhotosList", "Photo"); }
+    </div>
+</div>

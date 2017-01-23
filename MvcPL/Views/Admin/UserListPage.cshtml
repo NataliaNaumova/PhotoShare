@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Users";
+}
+
+<div class="container" id="users">
+    @{ Html.RenderAction("UserList", "Admin"); }
+</div>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/script")
+}

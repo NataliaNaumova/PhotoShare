@@ -1,0 +1,18 @@
+﻿@model MvcPL.Models.ViewModels.UserPageViewModel
+
+@{
+    ViewBag.Title = "User Page";
+}
+
+
+<div class="container">
+    @{ Html.RenderPartial("_UserProfile", Model); }
+    <hr/>
+    <div id="photos">
+        @{ Html.RenderPartial("_Gallery", Model.Photos); }
+    </div>
+</div>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/script")
+}

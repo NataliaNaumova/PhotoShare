@@ -1,0 +1,36 @@
+﻿@model MvcPL.Models.ViewModels.UserPageViewModel
+<div class="row user-page-info-block">
+    <div class="col-md-6 ">
+        <div class="col-md-6">
+            @if (Model.Profile.Avatar == null)
+            {
+                <img alt="Avatar" src=@Url.Content("~/Content/images/default-avatar.png") class="img-responsive img-circle" width="200" height="200" />
+            }
+            else
+            {
+                var base64 = Convert.ToBase64String(Model.Profile.Avatar);
+                var imgSrc = string.Format("data:image/gif;base64,{0}", base64);
+                <img alt="Avatar" src="@imgSrc" class="img-responsive img-circle" width="200" height="200" />
+            }
+        </div>
+        <div class="col-md-6">
+            <h2>@Model.User.Login</h2>
+            <div>
+                @if (Model.Profile.FirstName != null)
+                {
+                    <div>Name: @Model.Profile.FirstName</div>
+                }
+                @if (Model.Profile.LastName != null)
+                {
+                    <div>Last name: @Model.Profile.LastName</div>                    
+                }
+            </div>
+            <br/>
+            @if (Model.User.Login == User.Identity.Name)
+            {
+                <a href="@Url.Action("ProfileEdit", "User")" class="btn btn-primary">Edit profile</a>             
+            }
+        </div>
+    </div>
+    <div class="col-md-6"></div>
+</div>

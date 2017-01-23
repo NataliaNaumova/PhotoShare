@@ -1,0 +1,115 @@
+﻿@using MvcPL.Models.Helpers
+@using MvcPL.Models
+@model PagedList<PhotoModel>
+           
+
+@if (Model == null || Model.Content.Count == 0)
+{
+    <div class="text-center">
+        <p class="glyphicon glyphicon-picture"></p>
+        <p>No images found.</p>
+    </div>
+}
+else
+{
+    ViewBag.PageId = "page" + Model.CurrentPage;
+    ViewBag.LoadingElement = "loading-element" + Model.CurrentPage;
+    <div id=@ViewBag.PageId>
+        <div class="row">
+            @foreach (var photo in Model.Content)
+            {
+                ViewBag.PhotoId = "photo" + photo.Id;
+                <div class="col-md-4">
+                    <div class="panel photo-panel text-center well" id=@ViewBag.PhotoId>
+                        <div class="panel-body">
+                            @{
+                                var base64 = Convert.ToBase64String(photo.Image);
+                                var imgSrc = string.Format("data:image/gif;base64,{0}", base64);
+                            }
+                            <img alt="Photo" src="@imgSrc" class="img-responsive" width="300" height="300"/>
+                            <br/>
+                            <p>
+                                <strong>@photo.Description</strong>
+                            </p>
+                            <p>
+                                @photo.CreationTime.ToString()
+                            </p>
+
+                        </div>
+                        <div class="photo-panel panel-footer">
+                            <p>
+                                Photo by <a href="@Url.Action("UserPage", "User", new {login = photo.UserLogin})">
+                                    <i>@photo.UserLogin</i>
+                                </a>
+                            </p>
+                            @if (photo.Tags.Count > 0)
+                            {
+                                <p>
+                                    Tags:
+                                    @foreach (var tag in photo.Tags)
+                                    {
+                                        <a href=@Url.Action("Search", "Tag", new {tagSearched = tag.Name})>
+                                            <i>@tag.Name </i>
+                                        </a>
+                                    }
+                                </p>
+                            }
+                            <hr />
+                            <div id=@photo.Id.ToString()> @{Html.RenderPartial("~/Views/Like/_Like.cshtml", photo); } </div>
+                            @if (User.IsInRole("Admin") || (User.IsInRole("User") && (User.Identity.Name == photo.UserLogin)))
+                            {
+                                @Ajax.ActionLink("Delete", "Delete", "Photo", new { photoId = photo.Id, page = Model.CurrentPage, pageName = Model.PageName },
+                                               new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "photos", InsertionMode = InsertionMode.Replace, Confirm = "Are you sure you want to delete this photo?" })
+                            }
+                        </div>
+                    </div>
+
+                </div>
+            }
+        </div>
+        <div style="padding: 15px; text-align: center;">
+            @if (Model.Count > ImageTool.PageSize)
+            {
+                <div style="display: none" id=@ViewBag.LoadingElement>
+                    <img src=@Url.Content("~/Content/images/preloader.gif") height="110"/>
+                </div>
+                <div class="btn-group">
+                    @if (Model.CurrentPage != 1)
+                    {
+                        using (Ajax.BeginForm("Gallery", "Photo", new {page = 1, pageName = Model.PageName},
+                            new AjaxOptions {HttpMethod = "GET", UpdateTargetId = "photos", InsertionMode = InsertionMode.Replace, LoadingElementId = ViewBag.LoadingElement}))
+                        {
+                            <button type="submit" class="btn btn-default">
+                                <span class="glyphicon glyphicon-fast-backward"></span> First
+                            </button>
+                        }
+                        using (Ajax.BeginForm("Gallery", "Photo", new { page = Model.CurrentPage - 1, pageName = Model.PageName },
+                            new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "photos", InsertionMode = InsertionMode.Replace, LoadingElementId = ViewBag.LoadingElement }))
+                        {
+                            <button type="submit" class="btn btn-default">
+                                <span class="glyphicon glyphicon-chevron-left"></span> Prev
+                            </button>
+                        }
+                    }
+                    @if (Model.Count > Model.CurrentPage*ImageTool.PageSize)
+                    {
+                        using (Ajax.BeginForm("Gallery", "Photo", new {page = Model.CurrentPage + 1, pageName = Model.PageName},
+                            new AjaxOptions {HttpMethod = "GET", UpdateTargetId = "photos", InsertionMode = InsertionMode.Replace, LoadingElementId = ViewBag.LoadingElement}))
+                        {
+                            <button type="submit" class="btn btn-default">
+                                <span class="glyphicon glyphicon-chevron-right"></span> Next
+                            </button>
+                        }
+                        using (Ajax.BeginForm("Gallery", "Photo", new {page = Math.Ceiling((decimal) Model.Count/ImageTool.PageSize), pageName = Model.PageName},
+                            new AjaxOptions {HttpMethod = "GET", UpdateTargetId = "photos", InsertionMode = InsertionMode.Replace, LoadingElementId = ViewBag.LoadingElement}))
+                        {
+                            <button type="submit" class="btn btn-default">
+                                <span class="glyphicon glyphicon glyphicon-fast-forward"></span> Last
+                            </button>
+                        }
+                    }
+                </div>
+            }
+        </div>
+    </div>
+}

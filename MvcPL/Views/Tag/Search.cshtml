@@ -1,0 +1,17 @@
+﻿@model MvcPL.Models.ViewModels.TagViewModel
+
+@{
+    ViewBag.Title = "Search";
+}
+
+<div class="container">
+    @if (Model.Photos != null)
+    {
+        <h4 class="page-header text-center">@Model.Photos.Count photos were found for tag <i>@Model.Tag.Name</i></h4>
+    }
+    
+    
+    <div id="photos">
+        @{ Html.RenderPartial("_Gallery", Model.Photos); }
+    </div>
+</div>

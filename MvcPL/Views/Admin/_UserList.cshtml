@@ -1,0 +1,29 @@
+﻿@model MvcPL.Models.ViewModels.UserListViewModel
+
+<table class="table table-striped">
+    <tr>
+        <th>Login</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Functions</th>
+    </tr>
+    @foreach (var user in Model.Users)
+    {
+        <tr>
+            <td><a href="@Url.Action("UserPage", "User", new { login = user.Login })">@user.Login</a></td>
+            <td>@user.Email</td>
+            <td>@Model.Roles.Single(r => r.Id == user.RoleId).Name</td>
+            <td>@Model.Profiles.Single(p => p.Id == user.Id).FirstName</td>
+            <td>@Model.Profiles.Single(p => p.Id == user.Id).LastName</td>
+            <td>
+                @if (@Model.Roles.Single(r => r.Id == user.RoleId).Name != "Admin")
+                {
+                    @Ajax.ActionLink("Delete", "DeleteUser", "Admin", new {userId = user.Id}, new AjaxOptions() {InsertionMode = InsertionMode.Replace, HttpMethod = "POST", UpdateTargetId = "users", Confirm = "Are you sure you want to delete this user?"})    
+                }
+                
+            </td>
+        </tr>
+    }
+</table>
