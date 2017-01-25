@@ -8,9 +8,9 @@
             }
             else
             {
-                var base64 = Convert.ToBase64String(Model.Profile.Avatar);
-                var imgSrc = string.Format("data:image/gif;base64,{0}", base64);
-                <img alt="Avatar" src="@imgSrc" class="img-responsive img-circle" width="200" height="200" />
+                //var base64 = Convert.ToBase64String(Model.Profile.Avatar);
+                //var imgSrc = string.Format("data:image/gif;base64,{0}", base64);
+                <img alt="Avatar" src="@Url.Action("GetAvatar", "Photo",new{profileId = Model.Profile.Id})" class="img-responsive img-circle" width="200" height="200" />
             }
         </div>
         <div class="col-md-6">

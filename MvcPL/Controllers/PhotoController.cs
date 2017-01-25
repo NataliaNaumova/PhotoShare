@@ -199,5 +199,17 @@ namespace MvcPL.Controllers
             _photoService.Delete(photo.ToBllPhoto());
             return RedirectToAction("Gallery", new {Page = page, PageName = pageName});
         }
+
+        public ActionResult GetAvatar(int profileId)
+        {
+            var profile = _profileService.GetById(profileId).ToMvcProfile();
+            return File(profile.Avatar, "image/gif");
+        }
+
+        public ActionResult GetImage(int photoId)
+        {
+            var photo = _photoService.GetById(photoId).ToMvcPhoto();
+            return File(photo.Image, "image/gif");
+        }
     }
 }

@@ -22,7 +22,7 @@ else
                 ViewBag.PhotoId = "photo" + photo.Id;
                 <div class="col-md-4">
                     <div class="panel photo-panel text-center well" id=@ViewBag.PhotoId>
-                        @PhotoViewHelper.CreatePhotoPanelBody(Html, photo)
+                        @PhotoViewHelper.CreatePhotoPanelBody(Html, Url, photo)
                         <div class="photo-panel panel-footer">
                             <p>
                                 Photo by <a href="@Url.Action("UserPage", "User", new {login = photo.UserLogin})">

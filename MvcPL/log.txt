@@ -30,3 +30,125 @@
 2017-01-25 11:01:11.7479|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
 2017-01-25 11:05:48.0787|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
 2017-01-25 11:06:40.8907|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 13:05:32.3964|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 13:07:30.5514|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 13:13:31.1435|INFO|MvcPL.Controllers.ErrorController|A user requested a page that does not exist.
+2017-01-25 13:13:31.2059|ERROR|MvcPL.Infrastructure.Helpers.HandleAllErrorsAttribute|The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+2017-01-25 13:21:55.8541|ERROR|MvcPL.Infrastructure.Helpers.HandleAllErrorsAttribute|The parameters dictionary contains a null entry for parameter 'photoId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Like(Int32)' in 'MvcPL.Controllers.LikeController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+»м€ параметра: parameters
+2017-01-25 16:11:12.0678|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 16:14:41.5244|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 16:14:58.7378|ERROR|MvcPL.Infrastructure.Helpers.HandleAllErrorsAttribute|¬ходные данные не €вл€ютс€ действительной строкой Base-64, поскольку содержат символ в кодировке, отличной от Base 64, больше двух символов заполнени€ или недопустимый символ среди символов заполнени€. 
+2017-01-25 16:15:05.3335|INFO|MvcPL.Controllers.ErrorController|A user requested a page that does not exist.
+2017-01-25 16:15:05.4535|ERROR|MvcPL.Infrastructure.Helpers.HandleAllErrorsAttribute|The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+2017-01-25 16:18:46.5961|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 16:24:06.2660|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 16:24:27.2562|INFO|MvcPL.Controllers.ErrorController|A user requested a page that does not exist.
+2017-01-25 16:24:27.3342|ERROR|MvcPL.Infrastructure.Helpers.HandleAllErrorsAttribute|The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+2017-01-25 16:24:38.5810|INFO|MvcPL.Controllers.ErrorController|A user requested a page that does not exist.
+2017-01-25 16:24:38.6466|ERROR|MvcPL.Infrastructure.Helpers.HandleAllErrorsAttribute|The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+2017-01-25 16:29:52.2810|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 16:35:56.9560|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 16:45:07.9141|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 16:46:27.9892|INFO|MvcPL.Controllers.ErrorController|A user requested a page that does not exist.
+2017-01-25 16:46:28.1092|ERROR|MvcPL.Infrastructure.Helpers.HandleAllErrorsAttribute|The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+2017-01-25 16:46:46.6018|INFO|MvcPL.Controllers.ErrorController|A user requested a page that does not exist.
+2017-01-25 16:46:46.6968|ERROR|MvcPL.Infrastructure.Helpers.HandleAllErrorsAttribute|The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+2017-01-25 16:46:49.4767|INFO|MvcPL.Controllers.ErrorController|A user requested a page that does not exist.
+2017-01-25 16:46:49.5273|ERROR|MvcPL.Infrastructure.Helpers.HandleAllErrorsAttribute|The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+2017-01-25 16:53:31.8312|INFO|MvcPL.Controllers.ErrorController|A user requested a page that does not exist.
+2017-01-25 16:53:31.9412|ERROR|MvcPL.Infrastructure.Helpers.HandleAllErrorsAttribute|The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+2017-01-25 16:54:05.8433|INFO|MvcPL.Controllers.ErrorController|A user requested a page that does not exist.
+2017-01-25 16:54:05.9683|ERROR|MvcPL.Infrastructure.Helpers.HandleAllErrorsAttribute|The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+2017-01-25 16:55:39.3556|INFO|MvcPL.Controllers.ErrorController|A user requested a page that does not exist.
+2017-01-25 16:55:39.5856|ERROR|MvcPL.Infrastructure.Helpers.HandleAllErrorsAttribute|The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+2017-01-25 16:56:10.8039|INFO|MvcPL.Controllers.ErrorController|A user requested a page that does not exist.
+2017-01-25 16:56:10.9239|ERROR|MvcPL.Infrastructure.Helpers.HandleAllErrorsAttribute|The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml

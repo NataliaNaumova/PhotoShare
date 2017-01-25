@@ -49,7 +49,7 @@ namespace MvcPL.Controllers
 
             foreach (var photoLike in photo.Likes)
             {
-                photoLike.UserLogin = _userService.GetOneByPredicate(u => u.Id == like.ProfileId).Login;
+                photoLike.UserLogin = _userService.GetOneByPredicate(u => u.Id == photoLike.ProfileId).Login;
             }
 
             return PartialView("_Like", photo);

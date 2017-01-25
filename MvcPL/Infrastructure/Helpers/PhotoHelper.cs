@@ -7,13 +7,12 @@ namespace MvcPL.Infrastructure.Helpers
 {
     public static class PhotoViewHelper
     {
-        public static MvcHtmlString CreatePhotoPanelBody(this HtmlHelper html, PhotoModel photo)
+        public static MvcHtmlString CreatePhotoPanelBody(this HtmlHelper html, UrlHelper url, PhotoModel photo)
         {
             TagBuilder div = new TagBuilder("div");
             div.AddCssClass("panel-body");
 
-            var base64 = Convert.ToBase64String(photo.Image);
-            var imgSrc = string.Format("data:image/gif;base64,{0}", base64);
+            var imgSrc = url.Action("GetImage", "Photo", new {photoId = photo.Id});
             TagBuilder img = new TagBuilder("img");
             img.MergeAttributes(new Dictionary<string, string>() { { "alt", "Photo" }, { "src", imgSrc }, { "width", "300" }, { "height", "300" } });
             img.AddCssClass("img-responsive");
