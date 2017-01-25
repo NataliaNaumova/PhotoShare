@@ -1,4 +1,5 @@
-﻿@using MvcPL.Models.Helpers
+﻿@using MvcPL.Infrastructure.Helpers
+@using MvcPL.Models.Helpers
 @using MvcPL.Models
 @model PagedList<PhotoModel>
            
@@ -21,21 +22,7 @@ else
                 ViewBag.PhotoId = "photo" + photo.Id;
                 <div class="col-md-4">
                     <div class="panel photo-panel text-center well" id=@ViewBag.PhotoId>
-                        <div class="panel-body">
-                            @{
-                                var base64 = Convert.ToBase64String(photo.Image);
-                                var imgSrc = string.Format("data:image/gif;base64,{0}", base64);
-                            }
-                            <img alt="Photo" src="@imgSrc" class="img-responsive" width="300" height="300"/>
-                            <br/>
-                            <p>
-                                <strong>@photo.Description</strong>
-                            </p>
-                            <p>
-                                @photo.CreationTime.ToString()
-                            </p>
-
-                        </div>
+                        @PhotoViewHelper.CreatePhotoPanelBody(Html, photo)
                         <div class="photo-panel panel-footer">
                             <p>
                                 Photo by <a href="@Url.Action("UserPage", "User", new {login = photo.UserLogin})">

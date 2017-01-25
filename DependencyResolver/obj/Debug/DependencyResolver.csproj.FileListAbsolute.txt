@@ -70,3 +70,6 @@ C:\Users\ASUS\Desktop\FinalProject\PhotoShare\DependencyResolver\bin\Debug\Ninje
 C:\Users\ASUS\Desktop\FinalProject\PhotoShare\DependencyResolver\obj\Debug\DependencyResolver.csprojResolveAssemblyReference.cache
 C:\Users\ASUS\Desktop\FinalProject\PhotoShare\DependencyResolver\obj\Debug\DependencyResolver.dll
 C:\Users\ASUS\Desktop\FinalProject\PhotoShare\DependencyResolver\obj\Debug\DependencyResolver.pdb
+C:\Users\Natalia\Desktop\PhotoShare\DependencyResolver\bin\Debug\NLog.config
+C:\Users\Natalia\Desktop\PhotoShare\DependencyResolver\bin\Debug\NLog.dll
+C:\Users\Natalia\Desktop\PhotoShare\DependencyResolver\bin\Debug\NLog.xml

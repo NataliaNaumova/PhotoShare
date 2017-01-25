@@ -15,6 +15,7 @@ namespace ConsolePL
         private static IUserService _userService;
         private static IProfileService _profileService;
         private static IRoleService _roleService;
+        private static IPhotoService _photoService;
 
         static Program()
         {
@@ -27,6 +28,7 @@ namespace ConsolePL
             _userService = _resolver.Get<IUserService>();
             _profileService = _resolver.Get<IProfileService>();
             _roleService = _resolver.Get<IRoleService>();
+            _photoService = _resolver.Get<IPhotoService>();
 
             Process();
         }
@@ -74,6 +76,7 @@ namespace ConsolePL
                 {
                     Console.WriteLine("\nYou are autorized.\n");
                     guest = false;
+                    ProcessAutorized(user);
                 }
                 else
                 {
@@ -81,7 +84,6 @@ namespace ConsolePL
                 }
             } while (guest);
 
-            ProscessAutorized();
         }
 
         static void Register()
@@ -149,22 +151,30 @@ namespace ConsolePL
 
         }
 
-        static void ProscessAutorized()
+        static void ProcessAutorized(UserEntity user)
         {
             while (true)
             {
                 Console.WriteLine("1 - Logout");
+                Console.WriteLine("2 - Count of your photos");
                 switch (Console.ReadLine())
                 {
                     case "1":
-                        {
-                            return;
-                        }
+                    {
+                        return;
+                        break;
+                    }
+                    case "2":
+                    {
+                        var photos = _photoService.GetAllByPredicate(p => p.ProfileId == user.Id);
+                        Console.WriteLine("Count of your photos: " + photos.Count());
+                        break;
+                    }
                     default:
-                        {
-                            Console.WriteLine("Wrong input\n");
-                            break;
-                        }
+                    {
+                        Console.WriteLine("Wrong input\n");
+                        break;
+                    }
                 }
             }
         }

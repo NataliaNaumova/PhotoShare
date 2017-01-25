@@ -33,15 +33,25 @@ namespace MvcPL.Controllers
 
             tagSearched = tagSearched.Replace(" ", string.Empty).ToLower();
             var tag = _tagService.GetOneByPredicate(t => t.Name == tagSearched).ToMvcTag();
-
+            
             if (tag == null)
             {
-                return View();
+                return View(new TagViewModel()
+                {
+                    Tag = new TagModel()
+                    {
+                        Name = tagSearched
+                    },
+                    Photos = new PagedList<PhotoModel>()
+                    {
+                        Content = new List<PhotoModel>()
+                    }
+                });
             }
 
             var records = new PagedList<PhotoModel>
             {
-                Content = tag.Photos.Take(ImageTool.PageSize).ToList(),
+                Content = tag.Photos.Reverse().Take(ImageTool.PageSize).ToList(),
                 CurrentPage = 1,
                 PageName = "Tag" + tag.Name,
                 Count = tag.Photos.Count

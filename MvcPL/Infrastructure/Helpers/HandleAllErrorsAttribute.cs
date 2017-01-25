@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using NLog;
 
 namespace MvcPL.Infrastructure.Helpers
 {
     public class HandleAllErrorsAttribute : HandleErrorAttribute
     {
+        private static Logger logger = LogManager.GetCurrentClassLogger();
+
         public override void OnException(ExceptionContext filterContext)
         {
             if (filterContext == null)
@@ -39,6 +42,9 @@ namespace MvcPL.Infrastructure.Helpers
                 ViewData = new ViewDataDictionary<HandleErrorInfo>(model),
                 TempData = filterContext.Controller.TempData
             };
+
+            logger.Error(exception.Message);
+
             filterContext.ExceptionHandled = true;
             filterContext.HttpContext.Response.Clear();
             filterContext.HttpContext.Response.StatusCode = new HttpException(null, exception).GetHttpCode();

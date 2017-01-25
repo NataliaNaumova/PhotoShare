@@ -7,7 +7,6 @@ using DAL.Interface.Helper;
 using System;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
-using System.Diagnostics;
 using ORM.Entities;
 using DAL.Mappers;
 
@@ -78,8 +77,6 @@ namespace DAL.Concrete.ModelRepositories
             _context.Set<Profile>().AddOrUpdate(entity.ToOrmProfile());
             _context.SaveChanges();
             
-            //Debug.WriteLine(_context.GetHashCode());
-            //    _context.Entry(entity.ToOrmProfile()).State = EntityState.Modified;
         }
     }
 }

@@ -35,7 +35,7 @@ namespace MvcPL.Controllers
         {
             var user = _userService.GetById(userId).ToMvcUser();
 
-            if (user == null)
+            if ((user == null) || (user.RoleId == _roleService.GetOneByPredicate(r => r.Name == "Admin").Id))
             {
                 RedirectToAction("Error", "Error");
             }

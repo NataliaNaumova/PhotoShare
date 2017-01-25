@@ -109,7 +109,7 @@ namespace MvcPL.Controllers
             else if (pageName.StartsWith("Tag"))
             {
                 string tag = pageName.Substring(3);
-                photos.Content = _tagService.GetOneByPredicate(t => t.Name == tag).ToMvcTag().Photos.ToList();
+                photos.Content = _tagService.GetOneByPredicate(t => t.Name == tag).ToMvcTag().Photos.Reverse().ToList();
             }
             else if (pageName.StartsWith("Main"))
             {

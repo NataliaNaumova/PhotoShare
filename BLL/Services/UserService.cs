@@ -6,7 +6,7 @@ using BLL.Interface.Entities;
 using BLL.Interface.Services;
 using BLL.Mappers;
 using DAL.Interface.DTO;
-using DAL.Interface.Helper;
+using BLL.Interface.Helper;
 using DAL.Interface.Repository;
 using DAL.Interface.Repository.ModelRepositories;
 

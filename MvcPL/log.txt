@@ -1,0 +1,29 @@
+2017-01-25 02:43:22.0411|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 02:46:53.9673|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 03:52:24.4571|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 04:44:41.6345|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 04:45:10.9572|INFO|MvcPL.Controllers.ErrorController|A user requested a page that does not exist.
+2017-01-25 04:45:11.0632|ERROR|MvcPL.Infrastructure.Helpers.HandleAllErrorsAttribute|The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+2017-01-25 10:31:42.3956|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 10:45:23.6047|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 10:46:05.1360|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 10:46:40.5251|INFO|MvcPL.Controllers.ErrorController|A user requested a page that does not exist.
+2017-01-25 10:46:40.9371|ERROR|MvcPL.Infrastructure.Helpers.HandleAllErrorsAttribute|The view 'NotFound' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Error/NotFound.aspx
+~/Views/Error/NotFound.ascx
+~/Views/Shared/NotFound.aspx
+~/Views/Shared/NotFound.ascx
+~/Views/Error/NotFound.cshtml
+~/Views/Error/NotFound.vbhtml
+~/Views/Shared/NotFound.cshtml
+~/Views/Shared/NotFound.vbhtml
+2017-01-25 10:48:45.0572|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 10:49:22.4463|INFO|MvcPL.MvcApplication|PhotoShare website started its work.

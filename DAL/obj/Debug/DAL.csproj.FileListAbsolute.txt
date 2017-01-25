@@ -40,3 +40,6 @@ C:\Users\ASUS\Desktop\FinalProject\PhotoShare\DAL\bin\Debug\EntityFramework.SqlS
 C:\Users\ASUS\Desktop\FinalProject\PhotoShare\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\ASUS\Desktop\FinalProject\PhotoShare\DAL\obj\Debug\DAL.dll
 C:\Users\ASUS\Desktop\FinalProject\PhotoShare\DAL\obj\Debug\DAL.pdb
+C:\Users\Natalia\Desktop\PhotoShare\DAL\bin\Debug\NLog.config
+C:\Users\Natalia\Desktop\PhotoShare\DAL\bin\Debug\NLog.dll
+C:\Users\Natalia\Desktop\PhotoShare\DAL\bin\Debug\NLog.xml

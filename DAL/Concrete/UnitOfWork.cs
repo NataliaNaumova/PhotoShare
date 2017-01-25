@@ -2,11 +2,14 @@
 using System.Data.Entity.Validation;
 using System.Diagnostics;
 using DAL.Interface.Repository;
+using NLog;
 
 namespace DAL.Concrete
 {
     public class UnitOfWork : IUnitOfWork
     {
+        private static Logger logger = LogManager.GetCurrentClassLogger();
+
         public UnitOfWork(DbContext context)
         {
             Context = context;
@@ -26,11 +29,11 @@ namespace DAL.Concrete
                 {
                     foreach (var eve in e.EntityValidationErrors)
                     {
-                        Debug.WriteLine("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
+                        logger.Error("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
                             eve.Entry.Entity.GetType().Name, eve.Entry.State);
                         foreach (var ve in eve.ValidationErrors)
                         {
-                            Debug.WriteLine("- Property: \"{0}\", Error: \"{1}\"",
+                            logger.Error("- Property: \"{0}\", Error: \"{1}\"",
                                 ve.PropertyName, ve.ErrorMessage);
                         }
                     }

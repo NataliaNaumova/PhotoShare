@@ -241,3 +241,6 @@ C:\Users\ASUS\Desktop\FinalProject\PhotoShare\MvcPL\bin\ru\System.Net.Http.WebRe
 C:\Users\ASUS\Desktop\FinalProject\PhotoShare\MvcPL\obj\Debug\MvcPL.csprojResolveAssemblyReference.cache
 C:\Users\ASUS\Desktop\FinalProject\PhotoShare\MvcPL\obj\Debug\MvcPL.dll
 C:\Users\ASUS\Desktop\FinalProject\PhotoShare\MvcPL\obj\Debug\MvcPL.pdb
+C:\Users\Natalia\Desktop\PhotoShare\MvcPL\bin\NLog.config
+C:\Users\Natalia\Desktop\PhotoShare\MvcPL\bin\NLog.dll
+C:\Users\Natalia\Desktop\PhotoShare\MvcPL\bin\NLog.xml

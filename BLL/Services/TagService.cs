@@ -6,7 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using BLL.Mappers;
 using DAL.Interface.DTO;
-using DAL.Interface.Helper;
+using BLL.Interface.Helper;
 using DAL.Interface.Repository;
 using DAL.Interface.Repository.ModelRepositories;
 

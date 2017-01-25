@@ -46,6 +46,7 @@
     <Compile Include="Entities\RoleEntity.cs" />
     <Compile Include="Entities\TagEntity.cs" />
     <Compile Include="Entities\UserEntity.cs" />
+    <Compile Include="Helper\PredicateExpressionVisitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ILikeService.cs" />
     <Compile Include="Services\IPhotoService.cs" />
