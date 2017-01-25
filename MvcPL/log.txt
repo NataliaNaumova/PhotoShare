@@ -27,3 +27,6 @@
 ~/Views/Shared/NotFound.vbhtml
 2017-01-25 10:48:45.0572|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
 2017-01-25 10:49:22.4463|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 11:01:11.7479|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 11:05:48.0787|INFO|MvcPL.MvcApplication|PhotoShare website started its work.
+2017-01-25 11:06:40.8907|INFO|MvcPL.MvcApplication|PhotoShare website started its work.

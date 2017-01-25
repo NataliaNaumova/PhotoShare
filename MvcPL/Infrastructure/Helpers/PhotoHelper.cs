@@ -28,7 +28,7 @@ namespace MvcPL.Infrastructure.Helpers
             div.InnerHtml += p1;
 
             var p2 = new TagBuilder("p");
-            p2.SetInnerText(photo.CreationTime.ToString());
+            p2.SetInnerText(photo.CreationTime.ToLocalTime().ToString());
             div.InnerHtml += p2;
 
             return new MvcHtmlString(div.ToString());
